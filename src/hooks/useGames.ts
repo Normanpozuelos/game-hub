@@ -6,6 +6,7 @@ export interface Platform {
   id: number;
   name: string;
   slug: string;
+  rating_top: number;
 }
 
 export interface Game {
