@@ -35,12 +35,10 @@ const useData = <T>(
           setError(err.message);
           setLoading(false);
         });
-
-      return () => controller.abort;
+      return () => controller.abort();
     },
     deps ? [...deps] : []
   );
-
   return { data, error, isLoading };
 };
 
